@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.consulting/consulting/consulting.iml" filepath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.consulting/consulting/consulting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consulting (1).iml" filepath="$PROJECT_DIR$/consulting (1).iml" />
+    </modules>
+  </component>
+</project>
