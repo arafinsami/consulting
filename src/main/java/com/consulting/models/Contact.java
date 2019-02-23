@@ -22,6 +22,9 @@ public class Contact {
 	@Column(columnDefinition = "TEXT")
 	private String email;
 
+	@Column(length = 11)
+	private String phoneNumber;
+
 	@Column(columnDefinition = "TEXT")
 	private String message;
 
@@ -55,6 +58,14 @@ public class Contact {
 
 	public void setMessage(String message) {
 		this.message = message;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 
 }

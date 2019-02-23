@@ -90,7 +90,7 @@ ul.withArrow li {
 ul.withArrow li span {
 	margin-right: 10px;
 	font-weight: 700;
-	color: #43ca83;
+	color: rgba(255, 8, 0, .78);
 	border: 1px solid;
 	padding: 4px 8px;
 	font-size: 11px;
@@ -738,7 +738,7 @@ section.hero-text h1 {
 #content {
 	position: relative;
 	background: #ffffff;
-	padding: 80px 0;
+	padding: 20px 0;
 }
 
 .cta-text {
@@ -817,16 +817,16 @@ section.hero-text h1 {
 /* page headline
 ==================================== */
 #inner-headline {
-	background: #43ca83;
+	background: #B2BEB5;
 	position: relative;
 	margin: 0;
 	padding: 0;
 	color: white;
-	border-top: 1px solid #43ca83;
+	border-top: 1px solid  #e65507;
 }
 
 #inner-headline h2.pageTitle {
-	color: #0e3655;
+	color: #ffffff;
 	padding: 5px 0;
 	display: block;
 	text-align: center;
@@ -1214,8 +1214,8 @@ blockquote cite a, blockquote cite a:visited, blockquote cite a:visited
 .btn {
 	text-align: center;
 	color: #FFFFFF;
-	background: #43ca83;
-	border-color: #43ca83;
+	background: #B2BEB5;
+	border-color: #e65507;
 	width: 120px;
 	border-radius: 0;
 }
@@ -1397,7 +1397,7 @@ ul.team-detail li ul.social-network li i {
 }
 
 .navbar-brand i {
-	color: #43ca83;
+	color: rgba(255, 8, 0, .78);
 	font-size: 26px;
 	margin-right: 5px;
 	position: relative;
@@ -1748,10 +1748,10 @@ ul.social-network li {
 	/* margin: 0 5px; */
 	/* border: 1px solid #2D2D2D; */
 	padding: 5px 0 0;
-	width: 26px;
+	width: 50px;
 	display: inline-block;
 	text-align: center;
-	height: 32px;
+	height: 70px;
 	vertical-align: baseline;
 }
 
@@ -1798,7 +1798,7 @@ ul.social-network li {
 	height: 32px;
 	bottom: 0px;
 	right: 20px;
-	background: #43ca83;
+	background: #B2BEB5;
 }
 
 a.scrollup {
@@ -1932,8 +1932,8 @@ article img.pull-right, article .align-right {
 .btn:hover, .btn:focus {
 	color: #FFF;
 	text-decoration: none;
-	background: #37bb75;
-	border-color: #37bb75;
+	background: #B2BEB5;
+	border-color: #e65507;
 }
 /*  Media queries 
 ============================= */

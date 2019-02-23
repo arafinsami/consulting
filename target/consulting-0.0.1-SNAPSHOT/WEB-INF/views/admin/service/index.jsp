@@ -22,7 +22,7 @@
 					id="dataTables-example">
 					<thead>
 						<tr>
-							<th>Title</th>
+							<!-- <th>Title</th> -->
 							<th>Attachment</th>
 							<th>Action</th>
 						</tr>
@@ -31,7 +31,7 @@
 						<c:forEach items="${ourServices.getContent()}" var="ourService"
 							varStatus="loop">
 							<tr>
-								<td>${ourService.title}</td>
+								<%-- <td>${ourService.title}</td> --%>
 								<td><img
 									src="<c:url value="/ourServicesUploadPath/${ourService.attachment}"/>"
 									style="width: 100px; height: 80px;"></td>

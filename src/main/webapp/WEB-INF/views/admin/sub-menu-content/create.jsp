@@ -43,7 +43,7 @@
 					<label for="file-upload" class="custom-file-upload">
 					    <i class="fa fa-cloud-upload"></i>Upload File
 					</label>
-					<input id="file-upload" type="file" name="attachmentUpload" required="required"/>
+					<input id="file-upload" type="file" name="attachmentUpload"/>
 				</div>
 				<button type="submit"
 				class="btn btn-primary btn-block">Create</button>

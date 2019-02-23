@@ -22,6 +22,7 @@ public class ContactValidator implements Validator {
 		boolean name = isHtml(contact.getName());
 		boolean email = isHtml(contact.getEmail());
 		boolean message = isHtml(contact.getMessage());
+		boolean phoneNumber = isHtml(contact.getPhoneNumber());
 
 		if (name || contact.getName() == null) {
 			errors.rejectValue("name", "contact.name");
@@ -33,6 +34,10 @@ public class ContactValidator implements Validator {
 		
 		if (message || contact.getMessage() == null) {
 			errors.rejectValue("message", "contact.message");
+		}
+		
+		if (phoneNumber || contact.getPhoneNumber() == null) {
+			errors.rejectValue("phoneNumber", "contact.phoneNumber");
 		}
 	}
 

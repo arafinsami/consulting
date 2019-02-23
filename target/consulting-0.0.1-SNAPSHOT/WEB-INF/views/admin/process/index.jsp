@@ -27,7 +27,7 @@
 						<c:forEach items="${ourProcesses.getContent()}" var="ourProcess"
 							varStatus="loop">
 							<tr>
-								<td>${ourProcess.title}</td>
+								<%-- <td>${ourProcess.title}</td> --%>
 								<td><img
 									src="<c:url value="/ourProcessUploadPath/${ourProcess.attachment}"/>"
 									style="width: 100px; height: 80px;"></td>

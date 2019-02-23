@@ -37,20 +37,7 @@
 			</div>
 			<div class="col-sm-3">
 				<div class="widget">
-					<h5 class="widgetheading" style="color: #FDFEFE;font-size: 20px">Latest posts</h5>
-					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="#">Lorem
-								ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Pellentesque
-								et pulvinar enim. Quisque at tempor ligula</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Natus
-								error sit voluptatem accusantium doloremque</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="widget">
-					<h5 class="widgetheading" style="color: #FDFEFE;font-size: 20px">Recent News</h5>
+					<h5 class="widgetheading" style="color: #FDFEFE;font-size: 20px">About Uu</h5>
 					<ul class="link-list">
 						<li><a class="waves-effect waves-dark" href="#">Lorem
 								ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
@@ -81,13 +68,8 @@
 							data-placement="top" title="Facebook"><i
 								class="fa fa-facebook"></i></a></li>
 						<li><a class="waves-effect waves-dark" href="#"
-							data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a class="waves-effect waves-dark" href="#"
 							data-placement="top" title="Linkedin"><i
 								class="fa fa-linkedin"></i></a></li>
-						<li><a class="waves-effect waves-dark" href="#"
-							data-placement="top" title="Pinterest"><i
-								class="fa fa-pinterest"></i></a></li>
 						<li><a class="waves-effect waves-dark" href="#"
 							data-placement="top" title="Google plus"><i
 								class="fa fa-google-plus"></i></a></li>

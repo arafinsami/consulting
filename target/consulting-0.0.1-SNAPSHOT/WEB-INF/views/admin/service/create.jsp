@@ -19,11 +19,11 @@
 				<%-- <input type="hidden" name="${_csrf.parameterName}"
 					value="${_csrf.token}" /> --%>
 				
-				<div class="input-field">
+				<%-- <div class="input-field">
 					<form:input type="text" class="form-control" path="title"
 						placeholder="Title" />
 				</div>
-				<br>
+				<br> --%>
 				<div class="input-field">
 					<form:textarea name="editor1" id="editor1" rows="10" cols="80"
 						path="description" />

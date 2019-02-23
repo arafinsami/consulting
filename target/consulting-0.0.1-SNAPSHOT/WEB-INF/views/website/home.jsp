@@ -28,14 +28,9 @@
 			<div class="col-md-6 col-sm-6">
 				<div class="about-text">
 					<div class="section-title text-left">
-						<h2>
+						<h2 style="color:rgba(255, 8, 0, .78)">
 							Why <strong>Choose Us</strong>
 						</h2>
-						<p>
-							Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin
-							molestie malesuada Pellentesque <br>ipsum id orci porta
-							dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.
-						</p>
 					</div>
 					<p>Grids is a responsive Multipurpose Template. Lorem ipsum
 						dolor sit amet, consectetur adipiscing elit. Curabitur aliquet
@@ -53,8 +48,6 @@
 						<li><span class="fa fa-angle-right"></span> Donec
 							sollicitudin molestie malesuada.</li>
 					</ul>
-					<a href="#" class="btn btn-primary waves-effect waves-dark">Learn
-						More</a>
 				</div>
 			</div>
 			<div class="col-md-6 col-sm-6">
@@ -70,28 +63,17 @@
 <section id="content">
 	<div class="container">
 		<section class="services">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="aligncenter">
-						<h2 class="aligncenter">
-							Our <strong>Services</strong>
-						</h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
-						quae porro consequatur aliquam, incidunt eius magni provident, <br />doloribus
-						omnis minus ovident, doloribus omnis minus temporibus perferendis
-						nesciunt..
-					</div>
-					<br />
-				</div>
-			</div>
-
 			<c:forEach items="${services}" var="service">
 				<div class="row">
-					<div class="col-sm-4 info-blocks">
-						<div class="info-blocks-in">
-							<h3>${service.title}</h3>
-							<div class="line"></div>
-							<img class="img-responsive"
+					<div class="col-md-12">
+						<div class="aligncenter">
+							<h2 class="aligncenter" style="color:rgba(255, 8, 0, .78)">
+								Our <strong>Services</strong>
+							</h2>
+							${service.description}
+						</div>
+						<div class="col-sm-10 col-sm-offset-1">
+							<img class="img-responsive" style="height: 400px; width: 1100px;"
 								src="<c:url value="/ourServicesUploadPath/${service.attachment}"/>"
 								alt="">
 						</div>
@@ -101,33 +83,24 @@
 		</section>
 	</div>
 </section>
+
+
 <section id="content">
 	<div class="container">
 		<section class="services">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="aligncenter">
-						<h2 class="aligncenter">
-							Our <strong>Process</strong>
-						</h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
-					quae porro consequatur aliquam, incidunt eius magni provident, <br />doloribus
-					omnis minus ovident, doloribus omnis minus temporibus perferendis
-					nesciunt..
-					</div>
-					<br />
-				</div>
-			</div>
-
 			<c:forEach items="${processLists}" var="processList">
 				<div class="row">
-					<div class="col-sm-4 info-blocks">
-						<div class="info-blocks-in">
-							<h3>${processList.title}</h3>
-							<div class="line"></div>
-							<img class="img-responsive"
+					<div class="col-md-12">
+						<div class="aligncenter">
+							<h2 class="aligncenter" style="color:rgba(255, 8, 0, .78)">
+								Our <strong>Process</strong>
+							</h2>
+							${processList.description}
+						</div>
+						<div class="col-sm-10 col-sm-offset-1">
+							<img class="img-responsive" style="height: 400px; width: 1100px;"
 								src="<c:url value="/ourProcessUploadPath/${processList.attachment}"/>"
-								alt=""> <span class="card-title center">${processList.title}</span>
+								alt="">
 						</div>
 					</div>
 				</div>
@@ -135,44 +108,28 @@
 		</section>
 	</div>
 </section>
-<section class="section-padding gray-bg">
+
+<section id="content">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="section-title text-center">
-					<h2>
-						Our <strong>Business</strong>
-					</h2>
-					<p>
-						Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin
-						molestie malesuada Pellentesque <br>ipsum id orci porta
-						dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.
-					</p>
-				</div>
-			</div>
-		</div>
-		<c:forEach items="${businessLists}" var="businessList">
-			<div class="row">
-				<div class="col-md-6 col-sm-6">
-					<div class="about-image">
-						<img
-							src="<c:url value="/ourBusinessUploadPath/${businessList.attachment}"/>"
-							alt="About Images">
+		<section class="services">
+			<c:forEach items="${businessLists}" var="businessList">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="aligncenter">
+							<h2 class="aligncenter" style="color:rgba(255, 8, 0, .78)">
+								Our <strong>Business</strong>
+							</h2>
+							${businessList.description}
+						</div>
+						<div class="col-sm-10 col-sm-offset-1">
+							<img class="img-responsive" style="height: 400px; width: 1100px;"
+								src="<c:url value="/ourBusinessUploadPath/${businessList.attachment}"/>"
+								alt="Business Image">
+						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="about-text">
-						<p>${businessList.description}</p>
-					</div>
-				</div>
-			</div>
-		</c:forEach>
+			</c:forEach>
+		</section>
 	</div>
 </section>
-
-
-
-
-
-
 

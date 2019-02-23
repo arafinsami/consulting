@@ -11,7 +11,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="pageTitle">Contact Us</h2>
+				<h2 class="pageTitle" style="">Contact Us</h2>
 			</div>
 		</div>
 	</div>
@@ -46,6 +46,11 @@
 						<form:input type="email" class="form-control" path="email"
 							placeholder="Email" required="required" />
 						<form:errors path="email" class="form-control" required="required" style="color:red"/>
+					</div>
+					<div class="input-field">
+						<form:input type="text" class="form-control" path="phoneNumber"
+							placeholder="Phone Number"/>
+						<form:errors path="name" class="form-control" required="required" style="color:red"/>
 					</div>
 					<div class="input-field">
 						<form:textarea type="text" class="form-control" path="message"

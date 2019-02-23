@@ -20,7 +20,7 @@
 				<table class="table">
 					<thead>
 						<tr>
-							<th>Our Process</th>
+							<th>Our Business</th>
 							<th>Action</th>
 						</tr>
 					</thead>
@@ -28,7 +28,7 @@
 						<c:forEach items="${ourBusiness.getContent()}" var="ourBusin"
 							varStatus="loop">
 							<tr>
-								<td>${ourBusin.title}</td>
+								<%-- <td>${ourBusin.title}</td> --%>
 								<td><img
 									src="<c:url value="/ourBusinessUploadPath/${ourBusin.attachment}"/>"
 									style="width: 100px; height: 80px;"></td>
