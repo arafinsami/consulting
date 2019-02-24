@@ -13,8 +13,8 @@
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="${contextPath}/"><i
-					class="icon-info-blocks material-icons">language</i></a>
+				<a href="${contextPath}/"><img src="<c:url value="/resources/img/logo/logo-tapsd.png"/>"
+						alt="" width="200px" height="60px;" style="margin-top: 8px;"></a>
 			</div>
 			<div class="navbar-collapse collapse ">
 				<ul class="nav navbar-nav">
@@ -49,8 +49,6 @@
 								href="${contextPath}/about">Our Team</a></li>
 							<li><a class="waves-effect waves-dark"
 								href="${contextPath}/services">Our Services</a></li> --%>
-							<li><a class="waves-effect waves-dark"
-								href="${contextPath}/gallery">Gallery</a></li>
 							<li><a class="waves-effect waves-dark"
 								href="${contextPath}/gallery">Gallery</a></li>
 						</ul>

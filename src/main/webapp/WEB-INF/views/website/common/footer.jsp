@@ -23,21 +23,17 @@
 				<div class="widget">
 					<h5 class="widgetheading" style="color: #FDFEFE;font-size: 20px">Quick Links</h5>
 					<ul class="link-list">
-						<li><a class="waves-effect waves-dark" href="#">Latest
-								Events</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Terms and
-								conditions</a></li>
+						<li><a class="waves-effect waves-dark" href="${contextPath}/">Home</a></li>
+						<li><a class="waves-effect waves-dark" href="${contextPath}/contact">Contact us</a></li>
 						<li><a class="waves-effect waves-dark" href="#">Privacy
 								policy</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Career</a></li>
-						<li><a class="waves-effect waves-dark" href="#">Contact
-								us</a></li>
+						<li><a class="waves-effect waves-dark" href="${contextPath}/gallery">Gallery</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="col-sm-3">
 				<div class="widget">
-					<h5 class="widgetheading" style="color: #FDFEFE;font-size: 20px">About Uu</h5>
+					<h5 class="widgetheading" style="color: #FDFEFE;font-size: 20px">About Us</h5>
 					<ul class="link-list">
 						<li><a class="waves-effect waves-dark" href="#">Lorem
 								ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
