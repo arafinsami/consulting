@@ -25,37 +25,30 @@
 <section class="section-padding whyWe nav-bg">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-sm-6">
-				<div class="about-text">
-					<div class="section-title text-left">
-						<h2 style="color:rgba(255, 8, 0, .78)">
-							Why <strong>Choose Us</strong>
-						</h2>
-					</div>
-					<p>Grids is a responsive Multipurpose Template. Lorem ipsum
-						dolor sit amet, consectetur adipiscing elit. Curabitur aliquet
-						quam id dui posuere blandit. Donec sollicitudin molestie
-						malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus
-						suscipit tortor eget felis porttitor volutpat.</p>
+			<c:forEach items="${chooses}" var="choose">
+				<div class="col-md-6 col-sm-6">
+					<div class="about-text">
+						<div class="section-title text-left">
+							<h2 style="color: rgba(255, 8, 0, .78)">
+								Why <strong>Choose Us</strong>
+							</h2>
+						</div>
+						<p>${choose.description}.</p>
 
-					<ul class="withArrow">
-						<li><span class="fa fa-angle-right"></span> Lorem ipsum dolor
-							sit amet</li>
-						<li><span class="fa fa-angle-right"></span> consectetur
-							adipiscing elit</li>
-						<li><span class="fa fa-angle-right"></span> Curabitur aliquet
-							quam id dui</li>
-						<li><span class="fa fa-angle-right"></span> Donec
-							sollicitudin molestie malesuada.</li>
-					</ul>
+						<ul class="withArrow">
+							<c:forEach items="${choose.chooseUsLists}" var="chooseList">
+								<li><span class="fa fa-angle-right"></span>${chooseList.title}</li>
+							</c:forEach>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-6 col-sm-6">
-				<div class="about-image">
-					<img src="<c:url value="/resources/img/about1.jpg"/>"
-						alt="About Images">
+				<div class="col-md-6 col-sm-6">
+					<div class="about-image">
+						<img src="<c:url value="/whyChooseUsUploadPath/${choose.attachment}"/>"
+							alt="About Images">
+					</div>
 				</div>
-			</div>
+			</c:forEach>
 		</div>
 	</div>
 </section>
@@ -67,7 +60,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="aligncenter">
-							<h2 class="aligncenter" style="color:rgba(255, 8, 0, .78)">
+							<h2 class="aligncenter" style="color: rgba(255, 8, 0, .78)">
 								Our <strong>Services</strong>
 							</h2>
 							${service.description}
@@ -92,7 +85,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="aligncenter">
-							<h2 class="aligncenter" style="color:rgba(255, 8, 0, .78)">
+							<h2 class="aligncenter" style="color: rgba(255, 8, 0, .78)">
 								Our <strong>Process</strong>
 							</h2>
 							${processList.description}
@@ -116,7 +109,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="aligncenter">
-							<h2 class="aligncenter" style="color:rgba(255, 8, 0, .78)">
+							<h2 class="aligncenter" style="color: rgba(255, 8, 0, .78)">
 								Our <strong>Business</strong>
 							</h2>
 							${businessList.description}

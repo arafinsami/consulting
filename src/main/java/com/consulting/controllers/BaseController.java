@@ -39,6 +39,9 @@ public class BaseController {
 	@Value("${galleryContentUploadPath}")
 	String galleryContentUploadPath;
 	
+	@Value("${whyChooseUsUploadPath}")
+	String whyChooseUsUploadPath;
+	
 	protected String getUsername() {
 		return SecurityContextHolder.getContext().getAuthentication().getName();
 	}
@@ -215,6 +218,31 @@ public class BaseController {
 			try {
 				byte[] bytes = file.getBytes();
 				File dir = new File(attachmentUploadPath + "/" + userNameDirectory);
+				if (!dir.exists())
+					dir.mkdirs();
+				File serverFile = new File(dir + File.separator + name);
+				BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(serverFile));
+				stream.write(bytes);
+				stream.close();
+				return userNameDirectory + "/" + name;
+			} catch (Exception e) {
+				return null;
+			}
+		}
+		return null;
+	}
+	
+	
+	protected String chooseUsUploadFile(MultipartFile file) {
+		
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss-");
+		String date = dateFormat.format(new Date());
+		String name = date + file.getOriginalFilename().replace(' ', '-');
+		String userNameDirectory = SecurityContextHolder.getContext().getAuthentication().getName();
+		if (!file.isEmpty()) {
+			try {
+				byte[] bytes = file.getBytes();
+				File dir = new File(whyChooseUsUploadPath + "/" + userNameDirectory);
 				if (!dir.exists())
 					dir.mkdirs();
 				File serverFile = new File(dir + File.separator + name);

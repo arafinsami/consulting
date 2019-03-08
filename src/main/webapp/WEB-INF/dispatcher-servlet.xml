@@ -32,6 +32,8 @@
 	<mvc:resources mapping="/sliderUploadPath/**" location="file://${sliderUploadPath}/" />
 	
 	<mvc:resources mapping="/attachmentUploadPath/**" location="file://${attachmentUploadPath}/" />
+	
+	<mvc:resources mapping="/whyChooseUsUploadPath/**" location="file://${whyChooseUsUploadPath}/" />
 
 	<import resource="fileUpload.xml" />
 
