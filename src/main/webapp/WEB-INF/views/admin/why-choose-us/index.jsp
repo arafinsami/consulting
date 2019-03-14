@@ -21,9 +21,10 @@
 				<table class="table">
 					<thead>
 						<tr>
-							<th width="50%">Description</th>
-							<th width="25%">Attachment</th>
-							<th width="25%">Action</th>
+							<th width="30%">Title</th>
+							<th width="40%">Description</th>
+							<th width="10%">Attachment</th>
+							<th width="20%">Action</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -33,8 +34,7 @@
 								<td><img
 									src="<c:url value="/whyChooseUsUploadPath/${choose.attachment}"/>"
 									style="width: 100px; height: 80px;"></td>
-								<td>
-								<a type="button" class="btn btn-danger"
+								<td><a type="button" class="btn btn-danger"
 									href="${contextPath}/admin/why-choose-us/delete/${choose.chooseId}"
 									onclick="return confirm('Are you sure you want to delete?');">Delete</a>
 								</td>

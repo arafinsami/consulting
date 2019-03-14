@@ -22,7 +22,7 @@
 					Other Menus <span class="fa arrow"></span></a>
 				<ul class="nav nav-second-level">
 				    <li><a href="${contextPath}/admin/why-choose-us/index">Why choose us</a></li>
-				    <li><a href="${contextPath}/admin/why-choose-us-title/index">Why choose us-Title</a></li>
+				    <li><a href="${contextPath}/admin/why-choose-us-list/index">Why choose us-Title</a></li>
 					<li><a href="${contextPath}/admin/gallery/index">Gallery</a></li>
 					<li><a href="${contextPath}/admin/gallery-content/index">Gallery Contents</a></li>
 					<li><a href="${contextPath}/admin/contact/index">Contacts</a></li>

@@ -30,7 +30,7 @@
 					<div class="about-text">
 						<div class="section-title text-left">
 							<h2 style="color: rgba(255, 8, 0, .78)">
-								Why <strong>Choose Us</strong>
+								${choose.title}
 							</h2>
 						</div>
 						<p>${choose.description}.</p>

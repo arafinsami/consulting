@@ -21,10 +21,13 @@ public class ChooseUs {
 	@Column(name = "id")
 	private Integer chooseId;
 
-	@Column(length=2000)
+	@Column(length = 200)
+	private String title;
+
+	@Column(length = 2000)
 	private String description;
 
-	@Column(length=2000)
+	@Column(length = 2000)
 	private String attachment;
 
 	@OneToMany(mappedBy = "chooseUs", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
@@ -60,6 +63,14 @@ public class ChooseUs {
 
 	public void setAttachment(String attachment) {
 		this.attachment = attachment;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 }
